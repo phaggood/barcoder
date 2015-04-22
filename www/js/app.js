@@ -22,6 +22,7 @@ angular.module('starter', ['ionic', 'ngCordova'])
 
         $scope.getPicture = function () {
             $cordovaBarcodeScanner.scan().then(function (imageData) {
+                alert("scanning..");
                 console.log("success");
                 console.log("Barcode Format -> " + imageData.format);
                 console.log("Cancelled -> " + imageData.cancelled);
